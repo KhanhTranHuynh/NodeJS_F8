@@ -1,0 +1,9 @@
+//Dùng để cấu hình cơ sở dữ liệu thẳng trên nodejs rồi kết nối vào cơ sở dữ liệu
+
+const path = require('path')
+module.exports = {
+    'config': path.resolve('./src/config', 'config.json'),
+    'migrations-path': path.resolve('./src', 'migrations'),
+    'models-path': path.resolve('./src', 'models'),
+    'seeders-path': path.resolve('./src', 'seeders')
+}
